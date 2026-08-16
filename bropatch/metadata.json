@@ -1,0 +1,6 @@
+{
+  "name": "Bropatch",
+  "description": "Production-ready home services and maintenance platform connecting customers with vetted local service professionals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
