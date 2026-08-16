@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Admin API Routing
+    RewriteRule ^backend/admin/api/?(.*)$ backend/admin/api.php [L,QSA]
+    RewriteRule ^admin/api/?(.*)$ backend/admin/api.php [L,QSA]
+    
+    # Backend API Routing
+    RewriteRule ^backend/api/?(.*)$ backend/api/index.php [L,QSA]
+    RewriteRule ^api/?(.*)$ backend/api/index.php [L,QSA]
+    
+    # Admin Dashboard
+    RewriteRule ^backend/admin/dashboard/?$ backend/admin/dashboard.php [L]
+    RewriteRule ^admin/dashboard/?$ backend/admin/dashboard.php [L]
+    
+    # Admin Login
+    RewriteRule ^backend/admin/login/?$ backend/admin/login.php [L]
+    RewriteRule ^admin/login/?$ backend/admin/login.php [L]
+    RewriteRule ^backend/admin/?$ backend/admin/login.php [L]
+    RewriteRule ^admin/?$ backend/admin/login.php [L]
+</IfModule>
